@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact – Mythes et spiritualité</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo-titre">
+        <img
+          src="images/logo.jpg"
+          alt="Logo Mythes & Spiritualité"
+          class="logo-site"
+        />
+        <div>
+          <h1>Mythes & Spiritualité</h1>
+          <p>
+            Un espace pour explorer les légendes, les symboles et le chemin
+            intérieur.
+          </p>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="pharaons.html">Pharaons</a></li>
+          <li>
+            <a href="egypte-futur.html" class="onglet-futur"
+              >Égypte : Mythes & Codes</a
+            >
+          </li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact</h2>
+      <p>
+        Tu peux utiliser ce formulaire pour m’écrire à propos des mythes, de la
+        spiritualité ou pour toute question liée au site.
+      </p>
+
+      <form action="#" method="post" class="contact-form">
+        <div>
+          <label for="nom">Nom :</label>
+          <input type="text" id="nom" name="nom" required />
+        </div>
+
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Envoyer</button>
+      </form>
+
+      <p style="margin-top: 20px; font-size: 0.9rem">
+        (Pour l’instant, ce formulaire n’envoie pas encore d’email ; il sert
+        surtout d’entraînement à la création de pages. L’envoi réel se fera plus
+        tard avec un peu de PHP ou un service externe.)
+      </p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <!-- PARTIE 1 : Plan du site (INCHANGÉ) -->
+        <div class="footer-colonne">
+          <h4>Plan du site</h4>
+          <ul class="menu-bas">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="egypte-futur.html">Égypte : Mythes & Codes</a></li>
+            <li>
+              <a href="vie-spirituelle-dieux.html">Vie spirituelle et dieux</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PARTIE 2 : Réseaux SOCIAUX SEULS (TEXTE SUPPRIMÉ) -->
+        <div class="footer-colonne">
+          <div class="footer-reseaux">
+            <a
+              href="https://www.facebook.com/profile.php?id=100071303522123"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/icon-facebook.svg" alt="Facebook" width="30" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCESFVt7gmsKZvzxbT-W_J2Q"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/icon-youtube.svg" alt="YouTube" width="30" />
+            </a>
+            <a
+              href="https://www.instagram.com/philippejireau83/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/icon-instagram.svg" alt="Instagram" width="30" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOUVEAU : COPYRIGHT CENTRÉ EN BAS -->
+      <div class="footer-text">
+        © 2026 Mythes & Spiritualité – Exploration des légendes, des pharaons et
+        du chemin intérieur.
+      </div>
+    </footer>
+  </body>
+</html>

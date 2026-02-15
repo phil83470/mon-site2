@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panthéon Égyptien - 12 Divinités Majeures</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* Styles spécifiques au Panthéon */
+      .pantheon-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 20px;
+      }
+
+      .pantheon-header {
+        text-align: center;
+        margin-bottom: 80px;
+      }
+
+      .pantheon-header h1 {
+        font-size: 3.5em;
+        color: #d4af37;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .pantheon-header p {
+        font-size: 1.2em;
+        color: #00bfff;
+        font-style: italic;
+      }
+
+      /* Grille des dieux */
+      .gods-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin: 60px 0;
+      }
+
+      .god-card {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        border: 2px solid #d4af37;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      .god-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+        border-color: #00bfff;
+      }
+
+      .god-card-image {
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(45deg, #2a2a3e, #3a3a4e);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 80px;
+        border-bottom: 2px solid #d4af37;
+      }
+
+      .god-card-content {
+        padding: 25px;
+      }
+
+      .god-name {
+        font-size: 1.8em;
+        color: #d4af37;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      .god-title {
+        font-size: 0.9em;
+        color: #00bfff;
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+
+      .god-description {
+        font-size: 0.95em;
+        color: #e0e0e0;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .god-link {
+        display: inline-block;
+        background: linear-gradient(135deg, #d4af37, #ffd700);
+        color: #1a1a2e;
+        padding: 10px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .god-link:hover {
+        background: linear-gradient(135deg, #ffd700, #d4af37);
+        transform: scale(1.05);
+      }
+
+      /* Couleurs par dieu */
+      .card-amon {
+        border-top: 5px solid #ffd700;
+      }
+      .card-anubis {
+        border-top: 5px solid #808080;
+      }
+      .card-apophis {
+        border-top: 5px solid #8b0000;
+      }
+      .card-hathor {
+        border-top: 5px solid #ffc0cb;
+      }
+      .card-horus {
+        border-top: 5px solid #4169e1;
+      }
+      .card-isis {
+        border-top: 5px solid #00ced1;
+      }
+      .card-maat {
+        border-top: 5px solid #228b22;
+      }
+      .card-osiris {
+        border-top: 5px solid #2f4f4f;
+      }
+      .card-ra {
+        border-top: 5px solid #ff8c00;
+      }
+      .card-sekhmet {
+        border-top: 5px solid #dc143c;
+      }
+      .card-seth {
+        border-top: 5px solid #ff4500;
+      }
+      .card-thot {
+        border-top: 5px solid #9370db;
+      }
+      
+    </style>
+  
+   </head>
+   <body class="page-pantheon">
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../egypte-futur.html">Égypte : Mythes & Codes</a></li>
+        <li><a href="../vie-spirituelle-dieux.html">Vie spirituelle des dieux</a></li>
+        <li><a href="../pantheon/index.html">Panthéon</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="pantheon-container">
+      <!-- Ton contenu de grille des dieux ici -->
+    </main>
+
+    <!-- Header (chargé via include-header.js) -->
+    <div id="header-container"></div>
+
+    <!-- Contenu Principal -->
+    <main class="pantheon-container">
+      <div class="pantheon-header">
+        <h1>🏛️ Panthéon Égyptien 🏛️</h1>
+        <p>
+          Les 12 Divinités Majeures - Quand le Mythe Rencontre la Technologie
+        </p>
+      </div>
+
+      <!-- Grille des Dieux -->
+      <div class="gods-grid">
+        <!-- Amon-Rê -->
+        <div class="god-card card-amon">
+          <div class="god-card-image">☀️</div>
+          <div class="god-card-content">
+            <div class="god-name">Amon-Rê</div>
+            <div class="god-title">Le Roi des Dieux, Le Soleil</div>
+            <div class="god-description">
+              Divinité suprême, fusion d'Amon et de Ra. Symbolise le pouvoir
+              créateur et la royauté cosmique.
+            </div>
+            <a href="amon-re-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Anubis -->
+        <div class="god-card card-anubis">
+          <div class="god-card-image">🐕‍🦺</div>
+          <div class="god-card-content">
+            <div class="god-name">Anubis</div>
+            <div class="god-title">Maître des Morts, Gardien des Tombes</div>
+            <div class="god-description">
+              Dieu de la momification et de l'au-delà. Protecteur des défunts
+              sur le chemin de l'éternité.
+            </div>
+            <a href="anubis-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Apophis -->
+        <div class="god-card card-apophis">
+          <div class="god-card-image">🐍</div>
+          <div class="god-card-content">
+            <div class="god-name">Apophis</div>
+            <div class="god-title">Le Chaos, Le Serpent du Mal</div>
+            <div class="god-description">
+              Force du chaos primordial. Ennemi constant de l'ordre universel et
+              de Ra. Incarne l'obscurité.
+            </div>
+            <a href="apophis-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Hathor -->
+        <div class="god-card card-hathor">
+          <div class="god-card-image">💛</div>
+          <div class="god-card-content">
+            <div class="god-name">Hathor</div>
+            <div class="god-title">L'Amour, La Beauté et la Joie</div>
+            <div class="god-description">
+              Déesse de l'amour, de la musique et de la fertilité. Mère
+              protectrice et source de vie.
+            </div>
+            <a href="hathor-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Horus -->
+        <div class="god-card card-horus">
+          <div class="god-card-image">👁️</div>
+          <div class="god-card-content">
+            <div class="god-name">Horus</div>
+            <div class="god-title">Le Faucon, L'Œil Divin</div>
+            <div class="god-description">
+              Fils d'Osiris et d'Isis. Dieu du ciel et de la vengeance. Symbole
+              du pouvoir pharaonique.
+            </div>
+            <a href="horus-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Isis -->
+        <div class="god-card card-isis">
+          <div class="god-card-image">👑</div>
+          <div class="god-card-content">
+            <div class="god-name">Isis</div>
+            <div class="god-title">La Magicienne, La Mère Éternelle</div>
+            <div class="god-description">
+              Reine des dieux. Magicienne puissante et mère aimante. Protectrice
+              de la famille.
+            </div>
+            <a href="isis-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Maat -->
+        <div class="god-card card-maat">
+          <div class="god-card-image">⚖️</div>
+          <div class="god-card-content">
+            <div class="god-name">Maat</div>
+            <div class="god-title">La Justice et l'Équilibre Cosmique</div>
+            <div class="god-description">
+              Déesse de la vérité et de l'ordre. Maintient l'harmonie de
+              l'univers et juge les âmes.
+            </div>
+            <a href="maat-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Osiris -->
+        <div class="god-card card-osiris">
+          <div class="god-card-image">👴</div>
+          <div class="god-card-content">
+            <div class="god-name">Osiris</div>
+            <div class="god-title">Le Ressuscité, Roi de l'Au-Delà</div>
+            <div class="god-description">
+              Dieu de la renaissance et de la mort. Incarnation de la vie
+              éternelle et du renouveau.
+            </div>
+            <a href="osiris-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Ra -->
+        <div class="god-card card-ra">
+          <div class="god-card-image">☀️</div>
+          <div class="god-card-content">
+            <div class="god-name">Ra</div>
+            <div class="god-title">Le Soleil, Le Créateur</div>
+            <div class="god-description">
+              Dieu du soleil et de la création. Traverseur du ciel diurne.
+              Source de toute vie.
+            </div>
+            <a href="ra-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Sekhmet -->
+        <div class="god-card card-sekhmet">
+          <div class="god-card-image">🔥</div>
+          <div class="god-card-content">
+            <div class="god-name">Sekhmet</div>
+            <div class="god-title">La Lionne, La Destructrice</div>
+            <div class="god-description">
+              Déesse guerrière et protectrice. Incarne la puissance et la
+              vengeance divines.
+            </div>
+            <a href="sekhmet-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Seth -->
+        <div class="god-card card-seth">
+          <div class="god-card-image">🔴</div>
+          <div class="god-card-content">
+            <div class="god-name">Seth</div>
+            <div class="god-title">Le Chaos, Le Perturbateur</div>
+            <div class="god-description">
+              Dieu du désert et de la perturbation. Force chaotique nécessaire à
+              l'équilibre cosmique.
+            </div>
+            <a href="seth-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+
+        <!-- Thot -->
+        <div class="god-card card-thot">
+          <div class="god-card-image">🦉</div>
+          <div class="god-card-content">
+            <div class="god-name">Thot</div>
+            <div class="god-title">Le Sage, Dieu de la Sagesse</div>
+            <div class="god-description">
+              Dieu de la sagesse, de l'écriture et de la magie. Inventeur des
+              sciences et des arts.
+            </div>
+            <a href="thot-futur.html" class="god-link">Découvrir →</a>
+          </div>
+        </div>
+      </div>
+    </main>
+ <footer class="site-footer">
+      <div class="footer-inner">
+        <!-- PARTIE 1 : Plan du site (INCHANGÉ) -->
+        <div class="footer-colonne">
+          <h4>Plan du site</h4>
+          <ul class="menu-bas">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="egypte-futur.html">Égypte 2077</a></li>
+            <li>
+              <a href="vie-spirituelle-dieux.html">Vie spirituelle et dieux</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PARTIE 2 : Réseaux SOCIAUX SEULS (TEXTE SUPPRIMÉ) -->
+        <div class="footer-colonne">
+          <div class="footer-reseaux">
+            <a href="https://www.facebook.com/profile.php?id=100071303522123"target="_blank"rel="noopener">
+              <img src="images/icon-facebook.svg" alt="Facebook" width="30" />
+            </a>
+            <a href="https://www.youtube.com/channel/UCESFVt7gmsKZvzxbT-W_J2Q"target="_blank"rel="noopener">
+              <img src="images/icon-youtube.svg" alt="YouTube" width="30" />
+            </a>
+            <a href="https://www.instagram.com/philippejireau83/"target="_blank"rel="noopener">
+              <img src="images/icon-instagram.svg" alt="Instagram" width="30" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Copyright en bas -->
+      <div class="footer-text">
+        © 2026 Mythes & Spiritualité – Exploration des légendes et du chemin
+        intérieur.
+      </div>
+    </footer>
+
+    <script src="../js/include-footer.js"></script>
+    <script src="../js/loader.js"></script>
+  </body>
+</html>

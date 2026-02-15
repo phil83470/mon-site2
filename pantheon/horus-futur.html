@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horus : L'Architecte Système - Égypte 2077</title>
+    <link rel="icon" href="../images/logo.jpg" type="image/jpeg" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      /* --- STYLE FUTURISTE SPÉCIFIQUE --- */
+      body {
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+          url("../images/design-sans-titre.png");
+        background-attachment: fixed;
+        background-size: cover;
+        color: #d7d6e3;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .hero-horus {
+        text-align: center;
+        padding: 80px 20px;
+        border-bottom: 2px solid #00f3ff;
+        background: linear-gradient(180deg, #050816 0%, #000 100%);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero-horus h1 {
+        color: #00f3ff;
+        font-size: 3.5em;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        text-shadow: 0 0 20px rgba(0, 243, 255, 0.8);
+        margin: 0;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-horus p {
+        color: #8e9aaf;
+        font-family: "Courier New", monospace;
+        margin-top: 15px;
+        font-size: 1.2em;
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Effet de grille en arrière-plan du hero */
+      .hero-horus::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image:
+          linear-gradient(rgba(0, 243, 255, 0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(0, 243, 255, 0.05) 1px, transparent 1px);
+        background-size: 30px 30px;
+        z-index: 1;
+      }
+
+      .container-futur {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+
+      /* Sections de contenu */
+      .data-section {
+        background: rgba(11, 17, 32, 0.8);
+        border: 1px solid #333;
+        border-left: 4px solid #00f3ff;
+        margin-bottom: 40px;
+        padding: 30px;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s;
+      }
+
+      .data-section:hover {
+        transform: translateX(5px);
+        box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
+      }
+
+      .data-section h2 {
+        color: #00f3ff;
+        font-family: "Courier New", monospace;
+        margin-top: 0;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+
+      .data-section p {
+        line-height: 1.8;
+        color: #c0c0c0;
+        margin-bottom: 15px;
+        font-size: 1.05em;
+      }
+
+      .highlight {
+        color: #d4af37; /* Doré */
+        font-weight: bold;
+      }
+
+      /* Vidéo intégrée */
+      .video-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 30px auto;
+        border: 1px solid #00f3ff;
+        box-shadow: 0 0 15px rgba(0, 243, 255, 0.3);
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative; /* Nécessaire pour l'animation de scan */
+      }
+
+      /* Animation de scan */
+      .scan-line {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: #00f3ff;
+        box-shadow:
+          0 0 10px #00f3ff,
+          0 0 20px #00f3ff;
+        animation: scan-move 3s infinite linear;
+        z-index: 10;
+        opacity: 0.8;
+      }
+
+      @keyframes scan-move {
+        0% {
+          top: 0%;
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          top: 100%;
+          opacity: 0;
+        }
+      }
+
+      .video-container video {
+        width: 100%;
+        display: block;
+      }
+
+      .btn-retour {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 25px;
+        border: 1px solid #00f3ff;
+        color: #00f3ff;
+        text-decoration: none;
+        border-radius: 50px;
+        font-family: "Courier New", monospace;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      .btn-retour:hover {
+        background: #00f3ff;
+        color: #000;
+        box-shadow: 0 0 20px #00f3ff;
+      }
+    </style>
+  </head>
+  <body class="page-futur">
+    <!-- Navbar standard -->
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li><a href="../egypte-futur.html">Égypte : Mythes & Codes</a></li>
+        <li><a href="../vie-spirituelle-dieux.html">Vie spirituelle des dieux</a></li>
+        <li><a href="../pantheon/index.html">Panthéon</a></li>
+      </ul>
+    </nav>
+
+    <header class="hero-horus">
+      <h1>HORUS v2.0</h1>
+      <p>> PROTOCOLE DE PROTECTION ET DE GOUVERNANCE</p>
+    </header>
+
+    <main class="container-futur">
+      <!-- Vidéo avec Scan (placée en haut comme pour Isis) -->
+      <div class="video-container">
+        <div class="scan-line"></div>
+        <video autoplay loop muted playsinline>
+          <source src="../images/oeil_horus.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <section class="data-section">
+        <h2>01. ORIGINES & IDENTITÉ : LE LOINTAIN</h2>
+        <p>
+          Horus (en égyptien <em>Hor</em>, signifiant "Celui qui est au-dessus"
+          ou "le lointain") est une divinité extrêmement ancienne, apparaissant
+          dès la période prédynastique (v. 3300 av. J.-C.). Il existe deux
+          versions du programme :
+        </p>
+        <ul>
+          <li>
+            <strong>Horus l'Ancien :</strong> Dieu primitif du ciel, l'une des
+            premières divinités.
+          </li>
+          <li>
+            <strong>Horus le Jeune :</strong> Fils d'Isis et d'Osiris, le
+            vengeur et héritier légitime.
+          </li>
+        </ul>
+      </section>
+
+      <section class="data-section">
+        <h2>02. APPARENCE : L'INTERFACE VISUELLE</h2>
+        <p>
+          Représenté comme un homme à tête de faucon, souvent couronné du
+          Pschent (double couronne). Le faucon évoque sa maîtrise des cieux et
+          sa vision perçante.
+        </p>
+        <p>Ses yeux sont des capteurs cosmiques :</p>
+        <ul>
+          <li><strong>Œil droit :</strong> Le Soleil (Rê).</li>
+          <li><strong>Œil gauche :</strong> La Lune.</li>
+        </ul>
+      </section>
+
+      <section class="data-section">
+        <h2>03. PROTOCOLE VENGEUR : NAISSANCE & COMBAT</h2>
+        <p>
+          <strong>Naissance Miraculeuse :</strong> Conçu par Isis transformée en
+          milan au-dessus du corps d'Osiris, unissant vie et mort.
+        </p>
+        <p>
+          <strong>Enfance Cachée :</strong> Élevé secrètement à Khemmis (Delta)
+          pour échapper à Seth. Appelé alors Harpocrate (Horus enfant).
+        </p>
+        <p>
+          <strong>Combat Système :</strong> Un duel de 80 ans contre Seth pour
+          le trône. C'est la lutte éternelle entre l'ordre (Maât) et le chaos.
+        </p>
+      </section>
+
+      <section class="data-section">
+        <h2>04. L'OUDJAT : ALGORITHME DE RÉCUPÉRATION</h2>
+        <p>
+          Durant la bataille, Seth arrache l'œil gauche d'Horus. Thot le
+          reconstitue magiquement. L'Oudjat devient le symbole ultime de :
+        </p>
+        <ul>
+          <li>Protection divine et guérison.</li>
+          <li>Sagesse et clairvoyance.</li>
+          <li>Victoire du bien sur le mal.</li>
+        </ul>
+      </section>
+
+      <section class="data-section">
+        <h2>05. LE PHARAON : AVATAR TERRESTRE</h2>
+        <p>
+          Chaque pharaon est l'incarnation vivante d'Horus (le "Pharaon
+          Vivant"). Le nom royal est inscrit dans un serekh surmonté d'un
+          faucon. À sa mort, le pharaon devient Osiris, et son successeur
+          devient le nouvel Horus.
+        </p>
+      </section>
+
+      <section class="data-section">
+        <h2>06. FONCTIONS & CULTE</h2>
+        <p>
+          <strong>Rôles :</strong> Dieu du Ciel, Protecteur de la Royauté, Dieu
+          de la Guerre et Gardien Funéraire (via ses quatre fils).
+        </p>
+        <p>
+          <strong>Serveurs (Lieux de Culte) :</strong> Le Temple d'Edfou (2ème
+          plus grand d'Égypte), Nekhen (Hiérakonpolis) et Behdet.
+        </p>
+      </section>
+
+      <div style="text-align: center">
+        <a href="../egypte-futur.html" class="btn-retour"
+          >← RETOUR AU HUB CENTRAL</a
+        >
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-card">
+          <h4><a href="../index.html">Accueil</a></h4>
+        </div>
+        <div class="footer-card">
+          <h4><a href="../egypte-futur.html">Égypte 2077</a></h4>
+        </div>
+        <div class="footer-card">
+          <h4><a href="../vie-spirituelle-dieux.html">Vie Spirituelle</a></h4>
+        </div>
+        <div class="footer-card">
+          <h4><a href="../pharaons.html">Pharaons</a></h4>
+        </div>
+
+        <div class="footer-reseaux">
+          <a
+            href="https://www.facebook.com/profile.php?id=100071303522123"
+            target="_blank"
+            ><img src="../images/icon-facebook.svg" alt="Facebook"
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UCESFVt7gmsKZvzxbT-W_J2Q"
+            target="_blank"
+            ><img src="../images/icon-youtube.svg" alt="YouTube"
+          /></a>
+          <a href="https://www.instagram.com/philippejireau83/" target="_blank"
+            ><img src="../images/icon-instagram.svg" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footer-text">
+        © 2026 Mythes & Spiritualité – Exploration des légendes et du chemin
+        intérieur.
+      </div>
+    </footer>
+  </body>
+</html>

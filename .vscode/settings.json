@@ -1,0 +1,9 @@
+{
+"liveServer.settings.root": "/",  // Force la racine, mais slash reste
+"liveServer.settings.donotVerifyTags": true,  // Évite injections
+"liveServer.settings.useLocalIp": false,  // Option réseau
+"liveServer.settings.port": 5501  // Change port si conflit
+"liveServer.settings.rewriteRules": {
+        "^/$": "/index.html"
+    }   
+}

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La IVe dynastie égyptienne (2613-2494 av. J.-C.) : l'âge d'or des pyramides, Khéops, Khéphren, Mykérinos, Gizeh." />
+    <meta name="keywords" content="IVe dynastie, Égypte ancienne, Khéops, Khéphren, Mykérinos, Grande Pyramide, Gizeh, Snéfrou" />
+    <link rel="icon" type="image/jpeg" href="/projet-spirituelles/images/oeil-horus.jpg" />
+    <title>IVe Dynastie Égyptienne (2613-2494 av. J.-C.) | L'Âge d'Or des Pyramides</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/logo.jpg" type="/image/jpeg" />
+    
+  </head>
+   <style>
+
+        * {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    overflow-x: hidden;
+    position: relative;
+    
+    /* IMAGE DE FOND + TEXTURE DORÉE */
+    background-color: #2c1810;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 35px,
+            rgba(218, 165, 32, 0.03) 35px,
+            rgba(218, 165, 32, 0.03) 70px
+        ),
+        url('../images/ecriture.png'); /* Ton image EN DERNIER */
+    
+    background-size: auto, cover; /* 1er = texture, 2nd = image */
+    background-position: 0 0, center;
+    background-attachment: scroll, fixed;
+    background-repeat: repeat, no-repeat;
+}
+
+/* VOILE semi-transparent par-dessus */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 24, 16, 0.75); /* Voile marron ajustable */
+    z-index: -1;
+    pointer-events: none;
+}
+
+      /* Style spécifique pour la page dynastie */
+      
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      main article {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 25px 20px 35px 20px;
+        background-color: #181818;
+        border-radius: 8px;
+        border: 1px solid #333;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.article-card {
+        background-color: #111827;
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+      h1 {
+        color: #d4af37;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+
+      h2 {
+        color: #c9a959;
+        font-size: 2em;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #d4af37;
+        padding-bottom: 10px;
+      }
+
+      h3 {
+        color: #b8964f;
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      h3 a {
+        color: #d4af37;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      h3 a:hover {
+        color: #f0d068;
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 15px 0;
+        text-align: justify;
+      }
+
+      ul {
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin: 8px 0;
+        list-style-type: none;
+        padding-left: 10px;
+      }
+
+      strong {
+        color: #f0d068;
+      }
+
+      /* Séparateurs visuels entre pharaons */
+      h3 {
+        border-top: 1px solid rgba(212, 175, 55, 0.3);
+        padding-top: 20px;
+      }
+
+      h3:first-of-type {
+        border-top: none;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        main {
+          padding: 20px 15px;
+        }
+
+        h1 {
+          font-size: 2.2em;
+        }
+
+        h2 {
+          font-size: 1.6em;
+        }
+
+        h3 {
+          font-size: 1.3em;
+        }
+      }
+      /* --- NOUVEAU PIED DE PAGE (FUSION) --- */
+
+.site-footer {
+    background-color: #251404;           /* Noir très profond */
+    border-top: 3px solid #d4af37;       /* Ligne dorée de séparation */    
+    margin: 0;                    /* Marge au-dessus du footer */
+    padding: 20px;                       /* Espace intérieur */
+}
+
+/* Contenu du footer */
+.footer-inner {
+    max-width: 900px;                    /* Largeur maximale du contenu */
+    margin: 0 auto;                      /* Centre le bloc sur la page */
+    display: flex;                       /* Met les éléments côte à côte */
+    flex-wrap: wrap;                     /* Passe à la ligne sur mobile */
+    justify-content: space-between;      /* Ecarte les deux blocs */
+    align-items: center;                 /* Aligne verticalement */
+}
+
+/* Colonnes */
+.footer-colonne {
+    flex: 1;             /* Chaque colonne prend de la place */
+    min-width: 250px;    /* Ne devient jamais plus petit que 250px */
+}
+
+/* Style du menu bas (SEO) */
+.footer-colonne h4 {
+    color: #d4af37;               /* Couleur dorée */
+    margin-bottom: 10px;            /* Marge en bas */
+    text-transform: uppercase;      /* Tout en majuscules */
+}
+
+.menu-bas {
+    list-style: none;             /* Enlève les puces */
+    padding: 0;          /* Enlève le retrait par défaut */
+}
+
+.menu-bas li a {
+    color: #8e9aaf;      /* Couleur gris-bleu */
+    text-decoration: none; /* Enlève le soulignement */
+    display: block;      /* Force le lien à prendre toute la largeur */
+    padding: 5px 0;      /* Espace entre les liens */
+}
+
+.menu-bas li a:hover {
+    color: #fff;         /* Devient blanc au survol */
+}
+
+.footer-text {
+    text-align: center;
+    padding: 15px 20px;
+    background: rgba(26, 10, 0, 0.9);
+    color: #d4af37;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+
+/* Tes réseaux sociaux */
+.footer-reseaux {
+    display: flex;       /* Met les icônes côte à côte */
+    gap: 15px;           /* Espace entre les icônes */
+  
+}
+
+/* Petit effet sur tes icônes */
+.footer-reseaux img {
+    transition: transform 0.3s;     /* Animation de zoom */
+}
+    
+
+.footer-reseaux img:hover {
+    transform: scale(1.1); /* Grossit un peu au survol */
+}
+.footer-reseaux img {
+  width: 28px;
+  height: 28px;
+  filter: invert(90%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  gap: 40px;
+}
+    </style>
+  <body>
+
+    <main>
+      <h1>IVe Dynastie</h1>
+      <p style="text-align: center; font-size: 1.2em; color: #c9a959;">
+        Environ 2613 à 2494 av. J.-C. — L'apogée absolu. Les pyramides de Gizeh 
+        s'élèvent vers l'éternité.
+      </p>
+
+      <h2>L'Âge d'Or de l'Ancien Empire</h2>
+      <p>
+        La IVe dynastie représente l'apogée de la civilisation égyptienne antique. C'est l'âge d'or 
+        des pyramides, le sommet du génie architectural, l'époque où l'Égypte construit les monuments 
+        les plus extraordinaires de l'histoire humaine. Les pyramides de Gizeh défient le temps depuis 
+        4600 ans.
+      </p>
+      <p>
+        Snéfrou construit 3 à 4 pyramides complètes, expérimentant les techniques jusqu'à la perfection. 
+        Khéops construit la Grande Pyramide, merveille du monde antique et seule survivante des Sept 
+        Merveilles. Khéphren et Mykérinos complètent le plateau de Gizeh. Jamais l'humanité n'a construit 
+        aussi grand, aussi parfait, aussi éternel.
+      </p>
+
+      <h2>Contexte Historique</h2>
+      <p>
+        La IVe dynastie succède à la IIIe (Djéser, Houni) et hérite d'un royaume prospère, stable, 
+        maîtrisant parfaitement l'architecture en pierre. Snéfrou, fils ou gendre de Houni, fonde la 
+        nouvelle dynastie et lance une frénésie constructrice sans précédent.
+      </p>
+      <p>
+        Cette dynastie voit l'affirmation absolue du pouvoir pharaonique. Le roi est un dieu vivant, 
+        fils de Rê, maître absolu de l'Égypte. Les ressources de tout le royaume sont mobilisées pour 
+        construire les tombeaux royaux. C'est l'apothéose de la monarchie divine.
+      </p>
+
+      <h2>Les Pharaons de la IVe Dynastie</h2>
+
+      <h3><a href="/pharaons/snefrou-pharaon.html">1. Snéfrou</a></h3>
+      <p><strong>Le Bâtisseur Génial</strong> • ~2613-2589 av. J.-C. • 24 ans de règne</p>
+      <p>
+        Fondateur de la IVe dynastie et père de Khéops, Snéfrou est le plus grand bâtisseur de l'histoire 
+        égyptienne en volume de pierre déplacée. Il construit au moins 3 pyramides complètes (peut-être 4) : 
+        Meïdoum, la Pyramide Rhomboïdale et la Pyramide Rouge à Dahchour. Ses expérimentations mènent à 
+        la perfection technique qui permettra la Grande Pyramide.
+      </p>
+      <ul>
+        <li>🏛️ <strong>3-4 pyramides complètes</strong> – Record absolu</li>
+        <li>📐 <strong>Pyramide Rouge</strong> – Première vraie pyramide lisse réussie</li>
+        <li>🔺 <strong>Pyramide Rhomboïdale</strong> – Changement d'angle unique</li>
+        <li>💎 Plus de 9 millions de tonnes de pierre déplacées</li>
+        <li>👑 Père de Khéops</li>
+      </ul>
+
+      <h3><a href="/pharaons/kheops-pharaon.html">2. Khéops (Khoufou)</a></h3>
+      <p><strong>Le Bâtisseur de l'Impossible</strong> • ~2589-2566 av. J.-C. • 23 ans de règne</p>
+      <p>
+        LE pharaon légendaire. Khéops construit la Grande Pyramide de Gizeh, la plus grande pyramide 
+        jamais construite, merveille du monde antique, monument qui défie l'imagination. 146,5 mètres 
+        de hauteur, 2,3 millions de blocs de pierre, précision millimétrique, perfection absolue. Le 
+        sommet du génie humain.
+      </p>
+      <ul>
+        <li>🌟 <strong>Grande Pyramide de Gizeh</strong> – Plus grande pyramide de l'histoire</li>
+        <li>📏 146,5 m de haut (139 m aujourd'hui)</li>
+        <li>⚖️ 2,3 millions de blocs (environ 6 millions de tonnes)</li>
+        <li>🎯 Précision architecturale extraordinaire</li>
+        <li>🌍 Seule survivante des Sept Merveilles du Monde Antique</li>
+        <li>🚢 Barques solaires enterrées</li>
+      </ul>
+
+      <h3><a href="/pharaons/djedefre-pharaon.html">3. Djédefrê</a></h3>
+      <p><strong>Le Fils Rebelle</strong> • ~2566-2558 av. J.-C. • 8 ans de règne</p>
+      <p>
+        Fils et successeur de Khéops, Djédefrê choisit de construire sa pyramide à Abou Rawash (au nord 
+        de Gizeh) plutôt que sur le plateau de Gizeh. Rupture symbolique ? Affirmer son indépendance ? 
+        Sa pyramide, aujourd'hui en ruines, aurait pu être la plus haute si elle avait été achevée. Règne 
+        court et mystérieux.
+      </p>
+      <ul>
+        <li>🏜️ Pyramide à Abou Rawash (ruines)</li>
+        <li>❓ Rupture avec Gizeh</li>
+        <li>👑 Règne court (8 ans)</li>
+        <li>🦁 Premières statues avec lion (symbole solaire)</li>
+      </ul>
+
+      <h3><a href="/pharaons/khephren-pharaon.html">4. Khéphren (Khâfrê)</a></h3>
+      <p><strong>Le Majestueux</strong> • ~2558-2532 av. J.-C. • 26 ans de règne</p>
+      <p>
+        Fils de Khéops (et frère ou demi-frère de Djédefrê), Khéphren retourne à Gizeh et construit 
+        la deuxième grande pyramide, presque aussi imposante que celle de son père. Il fait aussi sculpter 
+        (probablement) le Grand Sphinx, gardien éternel de la nécropole. Règne long et prospère, 
+        consolidation de la puissance.
+      </p>
+      <ul>
+        <li>🏛️ <strong>Deuxième pyramide de Gizeh</strong> (143,5 m à l'origine)</li>
+        <li>🦁 <strong>Grand Sphinx</strong> – Monument colossal à son effigie (débattu)</li>
+        <li>🏛️ Temple de la Vallée magnifiquement préservé</li>
+        <li>👑 Règne long et stable (26 ans)</li>
+        <li>💎 Statue en diorite parmi les plus belles de l'Égypte</li>
+      </ul>
+
+      <h3><a href="/pharaons/mykerinos-pharaon.html">5. Mykérinos (Menkaourê)</a></h3>
+      <p><strong>Le Pieux</strong> • ~2532-2503 av. J.-C. • 28-29 ans de règne</p>
+      <p>
+        Fils de Khéphren, Mykérinos construit la troisième et plus petite pyramide de Gizeh (65 m de 
+        haut). Cette réduction de taille reflète-t-elle un changement religieux ? Des difficultés 
+        économiques ? Ou une évolution théologique ? Hérodote le décrit comme le plus juste et pieux 
+        des pharaons. Ses statues triades (avec déesses) sont des chefs-d'œuvre.
+      </p>
+      <ul>
+        <li>🏛️ <strong>Troisième pyramide de Gizeh</strong> (65 m)</li>
+        <li>🎨 Statues triades exceptionnelles (avec Hathor)</li>
+        <li>📖 Décrit par Hérodote comme juste et pieux</li>
+        <li>💎 Revêtement en granit rouge (plus précieux que calcaire)</li>
+        <li>👑 Règne long (28-29 ans)</li>
+      </ul>
+
+      <h3><a href="/pharaons/shepseskaf-pharaon.html">6. Chepseskaf</a></h3>
+      <p><strong>Le Dernier</strong> • ~2503-2498 av. J.-C. • 4-5 ans de règne</p>
+      <p>
+        Dernier pharaon de la IVe dynastie, fils de Mykérinos. Rupture radicale : il ne construit PAS 
+        de pyramide, mais un mastaba géant appelé « Mastabat Faraoun » à Saqqarah Sud. Pourquoi abandonner 
+        la tradition pyramidale ? Crise religieuse ? Difficultés économiques ? Règne très court, fin 
+        brutale de la dynastie.
+      </p>
+      <ul>
+        <li>🏛️ <strong>Mastabat Faraoun</strong> – Pas de pyramide !</li>
+        <li>⚠️ Rupture avec la tradition pyramidale</li>
+        <li>❓ Règne court et mystérieux (4-5 ans)</li>
+        <li>🔚 Dernier pharaon de la IVe dynastie</li>
+      </ul>
+
+      <h2>Le Plateau de Gizeh : Merveille Éternelle</h2>
+      <p>
+        Le plateau de Gizeh est le monument le plus célèbre de l'Égypte ancienne. Trois pyramides 
+        colossales alignées face au Nil, le Sphinx gardien, des temples magnifiques, des chaussées 
+        monumentales. C'est l'apogée architecturale de l'humanité antique.
+      </p>
+
+      <h3>Grande Pyramide de Khéops</h3>
+      <ul>
+        <li>• <strong>Hauteur originale :</strong> 146,5 mètres (139 m aujourd'hui)</li>
+        <li>• <strong>Base :</strong> 230 mètres de côté</li>
+        <li>• <strong>Volume :</strong> 2,3 millions de blocs (6 millions de tonnes)</li>
+        <li>• <strong>Précision :</strong> Erreur de nivellement < 2 cm sur 230 m</li>
+        <li>• <strong>Construction :</strong> Environ 20 ans</li>
+        <li>• <strong>Main-d'œuvre :</strong> 20 000-30 000 ouvriers (estimation)</li>
+      </ul>
+
+      <h3>Pyramide de Khéphren</h3>
+      <ul>
+        <li>• <strong>Hauteur originale :</strong> 143,5 mètres (136 m aujourd'hui)</li>
+        <li>• <strong>Base :</strong> 215 mètres de côté</li>
+        <li>• <strong>Particularité :</strong> Conserve une partie de son revêtement calcaire au sommet</li>
+        <li>• <strong>Temple de la Vallée :</strong> Magnifiquement préservé, blocs de granit massifs</li>
+      </ul>
+
+      <h3>Pyramide de Mykérinos</h3>
+      <ul>
+        <li>• <strong>Hauteur :</strong> 65 mètres (la plus petite des trois)</li>
+        <li>• <strong>Base :</strong> 103 mètres de côté</li>
+        <li>• <strong>Particularité :</strong> Revêtement en granit rouge (plus précieux)</li>
+        <li>• <strong>Pyramides satellites :</strong> Trois petites pyramides pour les reines</li>
+      </ul>
+
+      <h3>Le Grand Sphinx</h3>
+      <ul>
+        <li>• <strong>Longueur :</strong> 73 mètres</li>
+        <li>• <strong>Hauteur :</strong> 20 mètres</li>
+        <li>• <strong>Corps de lion :</strong> Symbole de force solaire</li>
+        <li>• <strong>Tête humaine :</strong> Probablement Khéphren (débat)</li>
+        <li>• <strong>Taillé dans le roc :</strong> Directement dans le plateau calcaire</li>
+        <li>• <strong>Gardien :</strong> Protège éternellement la nécropole</li>
+      </ul>
+
+      <h2>Prouesses Techniques</h2>
+      <h3>Extraction et Transport</h3>
+      <p>
+        Les blocs de calcaire proviennent des carrières du plateau de Gizeh même. Le granit (chambres 
+        intérieures, revêtements) vient d'Assouan, à 800 km au sud, transporté par bateau sur le Nil 
+        pendant la crue. Opération logistique colossale nécessitant des milliers d'ouvriers et une 
+        organisation parfaite.
+      </p>
+
+      <h3>Taille et Assemblage</h3>
+      <p>
+        Les blocs sont taillés avec des outils en cuivre et des percuteurs de dolerite. Précision 
+        millimétrique : les joints entre blocs sont si fins qu'on ne peut y glisser une lame de rasoir. 
+        Aucun mortier : les blocs tiennent par leur poids et leur ajustement parfait.
+      </p>
+
+      <h3>Élévation</h3>
+      <p>
+        Comment ont-ils élevé 2,3 millions de blocs à 146 mètres de hauteur ? Rampes extérieures ? 
+        Rampes intérieures ? Rampes en spirale ? Machines de levage ? Le débat continue, mais le résultat 
+        est là : ils l'ont fait.
+      </p>
+
+      <h3>Orientation Astronomique</h3>
+      <p>
+        Les pyramides sont orientées avec une précision extraordinaire vers les points cardinaux. La 
+        Grande Pyramide est alignée sur le nord avec une erreur de seulement 3 minutes d'arc (0,05°). 
+        Les couloirs intérieurs pointent vers des étoiles circumpolaires (étoiles qui ne se couchent jamais). 
+        Architecture cosmique autant qu'humaine.
+      </p>
+
+      <h2>Organisation de la Main-d'Œuvre</h2>
+      <h3>Pas d'Esclaves !</h3>
+      <p>
+        Contrairement au mythe popularisé par Hérodote et Hollywood, les pyramides n'ont PAS été construites 
+        par des esclaves. Elles l'ont été par des ouvriers égyptiens libres, recrutés par corvée pendant 
+        la saison de la crue (quand l'agriculture est impossible).
+      </p>
+
+      <h3>Villages d'Ouvriers</h3>
+      <p>
+        Les ouvriers vivaient dans des villages construits spécialement près des chantiers. Ils étaient 
+        nourris (pain, bière, viande, poisson), logés, soignés. Leurs cimetières ont été découverts : 
+        pas de traces de maltraitance, mais des preuves de soins médicaux (os ressoudés, amputations 
+        chirurgicales).
+      </p>
+
+      <h3>Équipes Spécialisées</h3>
+      <p>
+        Carriers, tailleurs de pierre, transporteurs, maçons, arpenteurs, ingénieurs, scribes, cuisiniers, 
+        médecins... Des dizaines de métiers spécialisés. Les équipes portaient des noms de compétition 
+        (« Les Amis de Khéops », « Les Ivrognes de Mykérinos »), créant une émulation entre groupes.
+      </p>
+
+      <h3>Motivation</h3>
+      <p>
+        Pourquoi travaillaient-ils si dur ? Plusieurs raisons :
+      </p>
+      <ul>
+        <li>• <strong>Devoir religieux :</strong> Aider le pharaon-dieu à rejoindre les cieux</li>
+        <li>• <strong>Fierté nationale :</strong> Construire la plus grande merveille du monde</li>
+        <li>• <strong>Rémunération :</strong> Nourriture, logement, exemptions fiscales</li>
+        <li>• <strong>Prestige social :</strong> Être associé au grand projet royal</li>
+      </ul>
+
+      <h2>Économie et Société</h2>
+      <h3>Prospérité Exceptionnelle</h3>
+      <p>
+        La IVe dynastie bénéficie d'une prospérité économique extraordinaire. Bonnes crues régulières du Nil, 
+        agriculture florissante, tributs massifs de Nubie et du Sinaï, commerce actif avec le Levant. Cette 
+        richesse finance les pyramides : on estime que 20-30% du PIB égyptien était consacré aux grands projets royaux.
+      </p>
+
+      <h3>Centralisation Extrême</h3>
+      <p>
+        Le pouvoir pharaonique atteint son apogée absolu. Toutes les ressources du royaume convergent vers 
+        le roi. Les nomarques sont des fonctionnaires révocables, les hauts dignitaires sont souvent membres 
+        de la famille royale. Aucun contre-pouvoir : le pharaon est maître absolu.
+      </p>
+
+      <h3>Noblesse et Élites</h3>
+      <p>
+        Les mastabas des hauts fonctionnaires entourent les pyramides royales. Ces tombeaux, richement 
+        décorés, témoignent de l'enrichissement de l'élite. Vizirs, architectes, prêtres, généraux : tous 
+        profitent de la prospérité et construisent leurs monuments pour l'éternité.
+      </p>
+
+      <h2>Religion et Théologie</h2>
+      <h3>Culte Solaire Triomphant</h3>
+      <p>
+        La IVe dynastie marque l'apogée du culte solaire de Rê. Le pharaon est « Sa-Rê » (Fils de Rê), 
+        incarnation terrestre du dieu créateur. La pyramide est rayon de soleil pétrifié, escalier vers le 
+        ciel, montagne primordiale. Toute l'architecture est théologie solaire.
+      </p>
+
+      <h3>Complexes Pyramidaux</h3>
+      <p>
+        Chaque pyramide fait partie d'un complexe religieux complet :
+      </p>
+      <ul>
+        <li>• <strong>Pyramide :</strong> Tombeau et machine de résurrection</li>
+        <li>• <strong>Temple funéraire (haut) :</strong> Culte du roi défunt</li>
+        <li>• <strong>Chaussée couverte :</strong> Chemin de procession</li>
+        <li>• <strong>Temple de la Vallée (bas) :</strong> Purification et rituels</li>
+        <li>• <strong>Port sur le Nil :</strong> Arrivée des offrandes</li>
+        <li>• <strong>Pyramides satellites :</strong> Pour reines et famille</li>
+      </ul>
+
+      <h3>Barques Solaires</h3>
+      <p>
+        Des barques démontées sont enterrées près des pyramides (notamment celle de Khéops, découverte 
+        intacte). Ces barques permettent au pharaon défunt de naviguer avec Rê dans le ciel, traversant 
+        éternellement la voûte céleste de jour et les enfers de nuit.
+      </p>
+
+      <h2>Art et Culture</h2>
+      <p>
+        La IVe dynastie produit certaines des plus belles œuvres d'art de l'Égypte ancienne. Statues 
+        royales en diorite, triades de Mykérinos, reliefs des mastabas des nobles : finesse, élégance, 
+        perfection. Les proportions deviennent canoniques, définissant l'art égyptien pour trois millénaires.
+      </p>
+      <p>
+        Les reliefs des mastabas (tombes des nobles) montrent des scènes de vie quotidienne : agriculture, 
+        chasse, pêche, artisanat, banquets. Ces images sont notre fenêtre sur la société égyptienne de l'âge d'or.
+      </p>
+
+      <h2>Déclin et Fin de la Dynastie</h2>
+      <p>
+        La IVe dynastie s'achève brutalement avec Chepseskaf, qui refuse de construire une pyramide. Pourquoi ? 
+        Plusieurs hypothèses :
+      </p>
+      <ul>
+        <li>• <strong>Épuisement économique :</strong> Les gigantesques chantiers ont vidé le trésor</li>
+        <li>• <strong>Crise religieuse :</strong> Réaction contre la démesure du culte solaire</li>
+        <li>• <strong>Montée du clergé de Rê :</strong> Les prêtres d'Héliopolis gagnent trop de pouvoir</li>
+        <li>• <strong>Troubles dynastiques :</strong> Chepseskaf n'a pas la légitimité totale</li>
+      </ul>
+      <p>
+        Quelle que soit la raison, la Ve dynastie qui suit sera très différente : pyramides plus petites, 
+        temples solaires, montée du clergé. L'âge d'or des pyramides géantes est terminé.
+      </p>
+
+      <h2>Héritage de la IVe Dynastie</h2>
+      <p>
+        La IVe dynastie représente l'apogée absolu de l'Ancien Empire et l'un des sommets de l'histoire 
+        humaine. Les pyramides de Gizeh fascinent l'humanité depuis 4600 ans. Elles sont le symbole de 
+        l'Égypte, preuve du génie humain, monuments éternels défiant le temps.
+      </p>
+      <p>
+        Ces pyramides ont inspiré des civilisations entières : Nubiens, Grecs, Romains, Arabes, Européens, 
+        le monde moderne. Elles ont généré d'innombrables mythes, théories, spéculations. Elles restent 
+        mystérieuses malgré des siècles d'études.
+      </p>
+      <p>
+        Jamais l'humanité n'a construit aussi grand en pierre. Les cathédrales médiévales sont plus hautes 
+        mais creuses. Les gratte-ciels modernes utilisent acier et béton. Les pyramides sont des montagnes 
+        artificielles pleines, construites pierre par pierre. Le génie et la détermination nécessaires 
+        dépassent l'imagination.
+      </p>
+      <p>
+        La IVe dynastie prouve qu'il y a 4600 ans, l'humanité était déjà capable de prouesses extraordinaires. 
+        Nos ancêtres n'étaient pas des primitifs : c'étaient des génies.
+      </p>
+
+      <h2>Pour aller plus loin</h2>
+      <p>
+        Retour à la page <a href="/dynasties/dynastie-3.html">IIIe Dynastie</a> pour voir comment Djéser 
+        a lancé l'ère pyramidale, ou explorer les fiches individuelles des pharaons de la IVe dynastie 
+        ci-dessus. Puis découvrez la <a href="/dynasties/dynastie-5.html">Ve Dynastie</a>, où le culte 
+        solaire de Rê domine et les temples solaires apparaissent.
+      </p>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <!-- PARTIE 1 : Plan du site (INCHANGÉ) -->
+        <div class="footer-colonne">
+          <h4>Plan du site</h4>
+          <ul class="menu-bas">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="egypte-futur.html">Égypte 2077</a></li>
+            <li>
+              <a href="vie-spirituelle-dieux.html">Vie spirituelle et dieux</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PARTIE 2 : Réseaux SOCIAUX SEULS (TEXTE SUPPRIMÉ) -->
+        <div class="footer-colonne">
+          <div class="footer-reseaux">
+            <a
+              href="https://www.facebook.com/profile.php?id=100071303522123"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-facebook.svg" alt="Facebook" width="30" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCESFVt7gmsKZvzxbT-W_J2Q"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-youtube.svg" alt="YouTube" width="30" />
+            </a>
+            <a
+              href="https://www.instagram.com/philippejireau83/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-instagram.svg" alt="Instagram" width="30" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOUVEAU : COPYRIGHT CENTRÉ EN BAS -->
+      <div class="footer-text">
+        © 2026 Mythes & Spiritualité – Exploration des légendes, des pharaons et
+        du chemin intérieur.
+      </div>
+    </footer>
+    </script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/speech.js"></script>
+    <script src="/js/active-nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La IIe dynastie égyptienne (2890-2686 av. J.-C.) : période de troubles et de restauration, d'Hotepsekhemouy à Khasekhemouy." />
+    <meta name="keywords" content="IIe dynastie, Égypte ancienne, Hotepsekhemouy, Khasekhemouy, Époque Thinite" />
+    <link rel="icon" type="image/jpeg" href="/projet-spirituelles/images/oeil-horus.jpg" />
+    <title>IIe Dynastie Égyptienne (2890-2686 av. J.-C.) | Troubles et Renaissance</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/logo.jpg" type="/image/jpeg" />
+  </head>
+  <style>
+        * {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    overflow-x: hidden;
+    position: relative;
+    
+    /* IMAGE DE FOND + TEXTURE DORÉE */
+    background-color: #2c1810;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 35px,
+            rgba(218, 165, 32, 0.03) 35px,
+            rgba(218, 165, 32, 0.03) 70px
+        ),
+        url('../images/ecriture.png'); /* Ton image EN DERNIER */
+    
+    background-size: auto, cover; /* 1er = texture, 2nd = image */
+    background-position: 0 0, center;
+    background-attachment: scroll, fixed;
+    background-repeat: repeat, no-repeat;
+}
+
+/* VOILE semi-transparent par-dessus */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 24, 16, 0.75); /* Voile marron ajustable */
+    z-index: -1;
+    pointer-events: none;
+}
+
+      /* Style spécifique pour la page dynastie */
+      
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      main article {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 25px 20px 35px 20px;
+        background-color: #181818;
+        border-radius: 8px;
+        border: 1px solid #333;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.article-card {
+        background-color: #111827;
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+      h1 {
+        color: #d4af37;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+
+      h2 {
+        color: #c9a959;
+        font-size: 2em;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #d4af37;
+        padding-bottom: 10px;
+      }
+
+      h3 {
+        color: #b8964f;
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      h3 a {
+        color: #d4af37;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      h3 a:hover {
+        color: #f0d068;
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 15px 0;
+        text-align: justify;
+      }
+
+      ul {
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin: 8px 0;
+        list-style-type: none;
+        padding-left: 10px;
+      }
+
+      strong {
+        color: #f0d068;
+      }
+
+      /* Séparateurs visuels entre pharaons */
+      h3 {
+        border-top: 1px solid rgba(212, 175, 55, 0.3);
+        padding-top: 20px;
+      }
+
+      h3:first-of-type {
+        border-top: none;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        main {
+          padding: 20px 15px;
+        }
+
+        h1 {
+          font-size: 2.2em;
+        }
+
+        h2 {
+          font-size: 1.6em;
+        }
+
+        h3 {
+          font-size: 1.3em;
+        }
+      }
+      /* --- NOUVEAU PIED DE PAGE (FUSION) --- */
+
+.site-footer {
+    background-color: #251404;           /* Noir très profond */
+    border-top: 3px solid #d4af37;       /* Ligne dorée de séparation */    
+    margin: 0;                    /* Marge au-dessus du footer */
+    padding: 20px;                       /* Espace intérieur */
+}
+
+/* Contenu du footer */
+.footer-inner {
+    max-width: 900px;                    /* Largeur maximale du contenu */
+    margin: 0 auto;                      /* Centre le bloc sur la page */
+    display: flex;                       /* Met les éléments côte à côte */
+    flex-wrap: wrap;                     /* Passe à la ligne sur mobile */
+    justify-content: space-between;      /* Ecarte les deux blocs */
+    align-items: center;                 /* Aligne verticalement */
+}
+
+/* Colonnes */
+.footer-colonne {
+    flex: 1;             /* Chaque colonne prend de la place */
+    min-width: 250px;    /* Ne devient jamais plus petit que 250px */
+}
+
+/* Style du menu bas (SEO) */
+.footer-colonne h4 {
+    color: #d4af37;               /* Couleur dorée */
+    margin-bottom: 10px;            /* Marge en bas */
+    text-transform: uppercase;      /* Tout en majuscules */
+}
+
+.menu-bas {
+    list-style: none;             /* Enlève les puces */
+    padding: 0;          /* Enlève le retrait par défaut */
+}
+
+.menu-bas li a {
+    color: #8e9aaf;      /* Couleur gris-bleu */
+    text-decoration: none; /* Enlève le soulignement */
+    display: block;      /* Force le lien à prendre toute la largeur */
+    padding: 5px 0;      /* Espace entre les liens */
+}
+
+.menu-bas li a:hover {
+    color: #fff;         /* Devient blanc au survol */
+}
+
+.footer-text {
+    text-align: center;
+    padding: 15px 20px;
+    background: rgba(26, 10, 0, 0.9);
+    color: #d4af37;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+
+/* Tes réseaux sociaux */
+.footer-reseaux {
+    display: flex;       /* Met les icônes côte à côte */
+    gap: 15px;           /* Espace entre les icônes */
+  
+}
+
+/* Petit effet sur tes icônes */
+.footer-reseaux img {
+    transition: transform 0.3s;     /* Animation de zoom */
+}
+    
+
+.footer-reseaux img:hover {
+    transform: scale(1.1); /* Grossit un peu au survol */
+}
+.footer-reseaux img {
+  width: 28px;
+  height: 28px;
+  filter: invert(90%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  gap: 40px;
+}
+    </style>
+ 
+  <body>
+    <main>
+      <h1>IIIe Dynastie</h1>
+      <p style="text-align: center; font-size: 1.2em; color: #c9a959;">
+        Environ 2686 à 2613 av. J.-C. — L'Ancien Empire commence. La première pyramide 
+        s'élève vers le ciel.
+      </p>
+
+      <h2>L'Aube de l'Ancien Empire</h2>
+      <p>
+        La IIIe dynastie marque un tournant majeur dans l'histoire égyptienne. L'Époque Thinite 
+        s'achève, l'Ancien Empire commence. C'est la naissance de l'architecture monumentale en 
+        pierre, l'explosion du génie égyptien, l'apogée de la civilisation pharaonique.
+      </p>
+      <p>
+        Djéser et son architecte Imhotep construisent la première pyramide de l'histoire : la 
+        pyramide à degrés de Saqqarah. Ce chef-d'œuvre révolutionnaire lance l'âge des pyramides 
+        qui définira l'Égypte pour les siècles à venir. Tout change avec la IIIe dynastie.
+      </p>
+
+      <h2>De l'Époque Thinite à l'Ancien Empire</h2>
+      <p>
+        La IIIe dynastie est le pont entre deux époques. Khasekhemouy (dernier pharaon de la IIe 
+        dynastie) a réunifié l'Égypte et introduit l'architecture en pierre. Son fils (ou petit-fils) 
+        Djéser prend le relais et accomplit la révolution : construire une montagne artificielle 
+        en pierre, un escalier vers les dieux, une pyramide.
+      </p>
+      <p>
+        Cette dynastie voit aussi l'affirmation définitive du culte solaire de Rê. Les pharaons 
+        portent tous le titre « Sa-Rê » (« Fils de Rê »), affirmant leur nature divine comme 
+        enfants du dieu créateur. La théologie royale atteint sa maturité.
+      </p>
+
+      <h2>Les Pharaons de la IIIe Dynastie</h2>
+
+      <h3><a href="/pharaons/sanakht-pharaon.html">1. Sanakht (Nebka)</a></h3>
+      <p><strong>Le Fondateur Mystérieux</strong> • ~2686-2668 av. J.-C. • 18 ans de règne</p>
+      <p>
+        Premier pharaon de la IIIe dynastie, bien que son existence et son ordre dans la succession 
+        soient débattus. Certains égyptologues pensent qu'il a régné avant Djéser, d'autres après. 
+        Période de transition entre la IIe et la IIIe dynastie, règne mal documenté mais important 
+        pour préparer les innovations futures.
+      </p>
+      <ul>
+        <li>❓ Ordre de succession débattu</li>
+        <li>🔄 Période de transition</li>
+        <li>🏛️ Prépare les innovations de Djéser</li>
+      </ul>
+
+      <h3><a href="/pharaons/djoser-pharaon.html">2. Djéser (Netjerikhet)</a></h3>
+      <p><strong>Le Révolutionnaire</strong> • ~2668-2649 av. J.-C. • 19 ans de règne</p>
+      <p>
+        LE pharaon révolutionnaire. Avec son génial architecte Imhotep, il construit la première 
+        pyramide de l'histoire : la pyramide à degrés de Saqqarah (60 mètres de haut, 6 degrés). 
+        C'est la première structure monumentale entièrement en pierre taillée de l'humanité. 
+        Djéser lance l'âge des pyramides et l'Ancien Empire.
+      </p>
+      <ul>
+        <li>🏛️ <strong>Pyramide à degrés de Saqqarah</strong> – Premier monument monumental en pierre</li>
+        <li>🧙 <strong>Imhotep</strong> – Architecte génial, plus tard divinisé</li>
+        <li>🌟 Lance l'âge d'or de l'Égypte</li>
+        <li>⚡ Règne brillant et prospère</li>
+      </ul>
+
+      <h3><a href="/pharaons/sekhemkhet-pharaon.html">3. Sekhemkhet</a></h3>
+      <p><strong>Le Successeur Éphémère</strong> • ~2649-2643 av. J.-C. • 6 ans de règne</p>
+      <p>
+        Fils ou successeur de Djéser, Sekhemkhet tente de suivre les pas de son prédécesseur en 
+        commençant la construction d'une pyramide à degrés à Saqqarah. Mais son règne court (6 ans) 
+        ne lui permet pas d'achever son projet. Sa pyramide reste inachevée, monument tragique d'un 
+        règne interrompu.
+      </p>
+      <ul>
+        <li>🏗️ Pyramide inachevée à Saqqarah</li>
+        <li>⏱️ Règne très court</li>
+        <li>❓ Circonstances de sa mort mystérieuses</li>
+      </ul>
+
+      <h3><a href="/pharaons/khaba-pharaon.html">4. Khaba</a></h3>
+      <p><strong>La Pyramide de Briques</strong> • ~2643-2637 av. J.-C. • 6 ans de règne</p>
+      <p>
+        Pharaon mal documenté qui tente lui aussi de construire une pyramide à degrés (« Pyramide 
+        en Couches » à Zaouiet el-Aryan), mais encore une fois inachevée. Règne court et troublé, 
+        période d'instabilité après la grandeur de Djéser.
+      </p>
+      <ul>
+        <li>🏗️ Pyramide inachevée à Zaouiet el-Aryan</li>
+        <li>❓ Règne obscur et mal connu</li>
+        <li>⚠️ Période de troubles ?</li>
+      </ul>
+
+      <h3><a href="/pharaons/houni-pharaon.html">5. Houni</a></h3>
+      <p><strong>Le Bâtisseur de Tours</strong> • ~2637-2613 av. J.-C. • 24 ans de règne</p>
+      <p>
+        Dernier pharaon de la IIIe dynastie, Houni restaure la stabilité après les règnes courts 
+        et troublés. On lui attribue (avec débat) la construction de plusieurs pyramides provinciales 
+        et peut-être le début de la pyramide de Meïdoum. Long règne prospère qui prépare l'apogée 
+        de la IVe dynastie.
+      </p>
+      <ul>
+        <li>🏛️ Possible constructeur de la pyramide de Meïdoum (débattu)</li>
+        <li>🗼 Petites pyramides provinciales</li>
+        <li>👑 Père (ou grand-père) de Snéfrou (IVe dynastie)</li>
+        <li>🔄 Restaure la stabilité</li>
+      </ul>
+
+      <h2>La Révolution Architecturale : La Pyramide de Djéser</h2>
+      <h3>Le Complexe de Saqqarah</h3>
+      <p>
+        La pyramide à degrés de Djéser n'est pas qu'une pyramide isolée : c'est un immense complexe 
+        funéraire révolutionnaire de 15 hectares, entouré d'un mur d'enceinte de 10 mètres de haut. 
+        Ce complexe comprend :
+      </p>
+      <ul>
+        <li>• <strong>La pyramide à 6 degrés</strong> (60 mètres de haut, 121 × 109 mètres de base)</li>
+        <li>• <strong>Temple funéraire</strong> pour le culte du roi défunt</li>
+        <li>• <strong>Cour du Heb-Sed</strong> pour la fête du jubilé royal éternel</li>
+        <li>• <strong>Chapelles factices</strong> pour les dieux de Haute et Basse-Égypte</li>
+        <li>• <strong>Palais sud et nord</strong> symbolisant le Double Pays</li>
+        <li>• <strong>Galeries souterraines</strong> avec chambres funéraires et magasins</li>
+        <li>• <strong>Colonnes engagées</strong> imitant les formes végétales (papyrus, lotus)</li>
+      </ul>
+
+      <h3>Imhotep : Le Génie Architectural</h3>
+      <p>
+        L'architecte de ce chef-d'œuvre est Imhotep, vizir, architecte, prêtre, médecin, sage. 
+        C'est le premier architecte de l'histoire dont le nom nous soit parvenu. Son génie révolutionne 
+        l'architecture : il invente la construction monumentale en pierre taillée, les colonnes, 
+        les voûtes, les décors architecturaux complexes.
+      </p>
+      <p>
+        Imhotep sera plus tard divinisé (Nouvel Empire et époque ptolémaïque) comme dieu de la 
+        médecine et de la sagesse. Les Grecs l'identifieront à Asclépios. Gloire suprême pour un 
+        mortel : devenir dieu.
+      </p>
+
+      <h3>Innovation Technique</h3>
+      <p>
+        Avant Djéser, les monuments étaient en briques crues. La pyramide à degrés utilise 330 000 m³ 
+        de pierre calcaire taillée et assemblée en millions de blocs. C'est un exploit technique 
+        stupéfiant : extraction des carrières, transport, taille précise, assemblage stable sur 60 
+        mètres de hauteur.
+      </p>
+      <p>
+        Cette maîtrise technique sera perfectionnée sous la IVe dynastie pour construire les pyramides 
+        lisses géantes de Snéfrou, Khéops, Khéphren et Mykérinos. Mais tout commence avec Djéser et 
+        Imhotep.
+      </p>
+
+      <h2>Économie et Société</h2>
+      <h3>Prospérité Économique</h3>
+      <p>
+        La IIIe dynastie bénéficie de la stabilité restaurée par Khasekhemouy. L'économie prospère : 
+        bonnes crues du Nil, agriculture florissante, tributs de Nubie et du Sinaï, commerce avec 
+        le Levant. Cette richesse finance les grands projets architecturaux.
+      </p>
+      <h3>Administration Centralisée</h3>
+      <p>
+        L'administration pharaonique atteint un niveau de sophistication remarquable. Le vizir 
+        (comme Imhotep sous Djéser) coordonne tous les départements : agriculture, trésor, justice, 
+        grands travaux. Les nomarques gouvernent les provinces, les scribes tiennent des registres 
+        détaillés. L'État est une machine efficace.
+      </p>
+      <h3>Main-d'Œuvre pour les Pyramides</h3>
+      <p>
+        Contrairement aux mythes grecs (Hérodote), les pyramides ne sont pas construites par des 
+        esclaves mais par des ouvriers égyptiens libres, recrutés par corvée pendant la saison de 
+        la crue (quand l'agriculture est impossible). Ces ouvriers sont nourris, logés, payés. 
+        C'est un projet national mobilisant des dizaines de milliers de personnes.
+      </p>
+
+      <h2>Religion et Culte Solaire</h2>
+      <h3>Le Pharaon, Fils de Rê</h3>
+      <p>
+        La IIIe dynastie affirme définitivement le culte solaire. Les pharaons portent tous le titre 
+        « Sa-Rê » (« Fils de Rê »), affirmant leur filiation divine avec le dieu créateur. La pyramide 
+        elle-même est un symbole solaire : escalier vers le ciel, rayon de soleil pétrifié, montagne 
+        primordiale où le soleil s'est posé à la création.
+      </p>
+      <h3>Le Culte Funéraire Royal</h3>
+      <p>
+        Le complexe de Djéser établit le modèle du culte funéraire royal qui durera mille ans : 
+        temple funéraire avec prêtres permanents, offrandes quotidiennes, rituels pour assurer la 
+        survie du roi dans l'au-delà. Le pharaon défunt devient un dieu, rejoignant Rê dans sa 
+        barque solaire pour traverser éternellement le ciel.
+      </p>
+
+      <h2>Art et Culture</h2>
+      <p>
+        La IIIe dynastie voit l'épanouissement de l'art égyptien classique. Les reliefs du complexe 
+        de Djéser montrent une finesse extraordinaire : scènes de la fête Heb-Sed, représentations 
+        du roi, dieux et déesses, offrandes, processions. Les proportions deviennent canoniques, 
+        les conventions artistiques se fixent.
+      </p>
+      <p>
+        Les statues royales atteignent un niveau de sophistication remarquable. La statue de Djéser 
+        du serdab (chambre close) de sa pyramide, première statue royale de taille réelle, montre 
+        déjà la maîtrise parfaite de la sculpture monumentale.
+      </p>
+
+      <h2>Problèmes de Succession</h2>
+      <p>
+        Après le règne brillant de Djéser, la dynastie connaît des difficultés. Sekhemkhet et Khaba 
+        règnent brièvement, leurs pyramides restent inachevées, signe de troubles ou de morts 
+        prématurées. Ces crises révèlent la fragilité du pouvoir : même dans l'âge d'or, les accidents 
+        dynastiques menacent.
+      </p>
+      <p>
+        Houni restaure finalement la stabilité et transmet le pouvoir à Snéfrou, fondateur de la 
+        IVe dynastie et père de Khéops. La transition vers l'apogée pyramidal se fait sans heurts.
+      </p>
+
+      <h2>Héritage de la IIIe Dynastie</h2>
+      <p>
+        La IIIe dynastie change l'Égypte à jamais. Elle lance l'âge des pyramides, invente l'architecture 
+        monumentale en pierre, affirme le culte solaire, perfectionne l'administration, établit les 
+        conventions artistiques. C'est la naissance de l'Égypte classique, celle qui fascine le monde 
+        depuis 4700 ans.
+      </p>
+      <p>
+        La pyramide de Djéser reste debout aujourd'hui, témoignage monumental du génie de cette 
+        dynastie. Elle annonce les merveilles de la IVe dynastie : les pyramides de Snéfrou, la 
+        Grande Pyramide de Khéops, l'apogée absolu de l'architecture égyptienne.
+      </p>
+      <p>
+        Sans la IIIe dynastie, sans Djéser et Imhotep, les pyramides de Gizeh n'auraient jamais existé. 
+        Tout commence ici, dans le désert de Saqqarah, il y a 4700 ans.
+      </p>
+
+      <h2>Pour aller plus loin</h2>
+      <p>
+        Retour à la page <a href="/dynasties/dynastie-2.html">IIe Dynastie</a> pour voir comment 
+        Khasekhemouy a préparé cette révolution, ou explorer les fiches individuelles des pharaons 
+        de la IIIe dynastie ci-dessus. Puis découvrez la <a href="/dynasties/dynastie-4.html">IVe Dynastie</a>, 
+        l'apogée des pyramides avec Khéops, Khéphren et Mykérinos.
+      </p>
+
+    </main>
+
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <!-- PARTIE 1 : Plan du site (INCHANGÉ) -->
+        <div class="footer-colonne">
+          <h4>Plan du site</h4>
+          <ul class="menu-bas">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="egypte-futur.html">Égypte 2077</a></li>
+            <li>
+              <a href="vie-spirituelle-dieux.html">Vie spirituelle et dieux</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PARTIE 2 : Réseaux SOCIAUX SEULS (TEXTE SUPPRIMÉ) -->
+        <div class="footer-colonne">
+          <div class="footer-reseaux">
+            <a
+              href="https://www.facebook.com/profile.php?id=100071303522123"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-facebook.svg" alt="Facebook" width="30" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCESFVt7gmsKZvzxbT-W_J2Q"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-youtube.svg" alt="YouTube" width="30" />
+            </a>
+            <a
+              href="https://www.instagram.com/philippejireau83/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-instagram.svg" alt="Instagram" width="30" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOUVEAU : COPYRIGHT CENTRÉ EN BAS -->
+      <div class="footer-text">
+        © 2026 Mythes & Spiritualité – Exploration des légendes, des pharaons et
+        du chemin intérieur.
+      </div>
+    </footer>
+    </script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/speech.js"></script>
+    <script src="/js/active-nav.js"></script>
+  </body>
+</html>

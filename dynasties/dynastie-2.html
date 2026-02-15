@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="La IIe dynastie égyptienne (2890-2686 av. J.-C.) : période de troubles et de restauration, d'Hotepsekhemouy à Khasekhemouy." />
+    <meta name="keywords" content="IIe dynastie, Égypte ancienne, Hotepsekhemouy, Khasekhemouy, Époque Thinite" />
+    <link rel="icon" type="image/jpeg" href="/projet-spirituelles/images/oeil-horus.jpg" />
+    <title>IIe Dynastie Égyptienne (2890-2686 av. J.-C.) | Troubles et Renaissance</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/logo.jpg" type="/image/jpeg" />
+  </head>
+  <style>
+        * {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+    overflow-x: hidden;
+    position: relative;
+    
+    /* IMAGE DE FOND + TEXTURE DORÉE */
+    background-color: #2c1810;
+    background-image: 
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 35px,
+            rgba(218, 165, 32, 0.03) 35px,
+            rgba(218, 165, 32, 0.03) 70px
+        ),
+        url('../images/ecriture.png'); /* Ton image EN DERNIER */
+    
+    background-size: auto, cover; /* 1er = texture, 2nd = image */
+    background-position: 0 0, center;
+    background-attachment: scroll, fixed;
+    background-repeat: repeat, no-repeat;
+}
+
+/* VOILE semi-transparent par-dessus */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 24, 16, 0.75); /* Voile marron ajustable */
+    z-index: -1;
+    pointer-events: none;
+}
+
+      /* Style spécifique pour la page dynastie */
+      
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+      }
+      main article {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 25px 20px 35px 20px;
+        background-color: #181818;
+        border-radius: 8px;
+        border: 1px solid #333;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+.article-card {
+        background-color: #111827;
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+      h1 {
+        color: #d4af37;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      }
+
+      h2 {
+        color: #c9a959;
+        font-size: 2em;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #d4af37;
+        padding-bottom: 10px;
+      }
+
+      h3 {
+        color: #b8964f;
+        font-size: 1.5em;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      h3 a {
+        color: #d4af37;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      h3 a:hover {
+        color: #f0d068;
+        text-decoration: underline;
+      }
+
+      p {
+        margin: 15px 0;
+        text-align: justify;
+      }
+
+      ul {
+        margin: 15px 0;
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin: 8px 0;
+        list-style-type: none;
+        padding-left: 10px;
+      }
+
+      strong {
+        color: #f0d068;
+      }
+
+      /* Séparateurs visuels entre pharaons */
+      h3 {
+        border-top: 1px solid rgba(212, 175, 55, 0.3);
+        padding-top: 20px;
+      }
+
+      h3:first-of-type {
+        border-top: none;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        main {
+          padding: 20px 15px;
+        }
+
+        h1 {
+          font-size: 2.2em;
+        }
+
+        h2 {
+          font-size: 1.6em;
+        }
+
+        h3 {
+          font-size: 1.3em;
+        }
+      }
+      /* --- NOUVEAU PIED DE PAGE (FUSION) --- */
+
+.site-footer {
+    background-color: #251404;           /* Noir très profond */
+    border-top: 3px solid #d4af37;       /* Ligne dorée de séparation */    
+    margin: 0;                    /* Marge au-dessus du footer */
+    padding: 20px;                       /* Espace intérieur */
+}
+
+/* Contenu du footer */
+.footer-inner {
+    max-width: 900px;                    /* Largeur maximale du contenu */
+    margin: 0 auto;                      /* Centre le bloc sur la page */
+    display: flex;                       /* Met les éléments côte à côte */
+    flex-wrap: wrap;                     /* Passe à la ligne sur mobile */
+    justify-content: space-between;      /* Ecarte les deux blocs */
+    align-items: center;                 /* Aligne verticalement */
+}
+
+/* Colonnes */
+.footer-colonne {
+    flex: 1;             /* Chaque colonne prend de la place */
+    min-width: 250px;    /* Ne devient jamais plus petit que 250px */
+}
+
+/* Style du menu bas (SEO) */
+.footer-colonne h4 {
+    color: #d4af37;               /* Couleur dorée */
+    margin-bottom: 10px;            /* Marge en bas */
+    text-transform: uppercase;      /* Tout en majuscules */
+}
+
+.menu-bas {
+    list-style: none;             /* Enlève les puces */
+    padding: 0;          /* Enlève le retrait par défaut */
+}
+
+.menu-bas li a {
+    color: #8e9aaf;      /* Couleur gris-bleu */
+    text-decoration: none; /* Enlève le soulignement */
+    display: block;      /* Force le lien à prendre toute la largeur */
+    padding: 5px 0;      /* Espace entre les liens */
+}
+
+.menu-bas li a:hover {
+    color: #fff;         /* Devient blanc au survol */
+}
+
+.footer-text {
+    text-align: center;
+    padding: 15px 20px;
+    background: rgba(26, 10, 0, 0.9);
+    color: #d4af37;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+
+/* Tes réseaux sociaux */
+.footer-reseaux {
+    display: flex;       /* Met les icônes côte à côte */
+    gap: 15px;           /* Espace entre les icônes */
+  
+}
+
+/* Petit effet sur tes icônes */
+.footer-reseaux img {
+    transition: transform 0.3s;     /* Animation de zoom */
+}
+    
+
+.footer-reseaux img:hover {
+    transform: scale(1.1); /* Grossit un peu au survol */
+}
+.footer-reseaux img {
+  width: 28px;
+  height: 28px;
+  filter: invert(90%);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  gap: 40px;
+}
+    </style>
+ 
+  <body>
+    <main>
+      <h1>IIe Dynastie</h1>
+      <p style="text-align: center; font-size: 1.2em; color: #c9a959;">
+        Environ 2890 à 2686 av. J.-C. — L'Époque Thinite continue, entre crises 
+        et renaissance.
+      </p>
+
+      <h2>Une dynastie de troubles et de résilience</h2>
+      <p>
+        La IIe dynastie commence dans la confusion. À la mort de Qâ, dernier pharaon de la 
+        Ière dynastie, des troubles éclatent. Hotepsekhemouy s'impose et fonde une nouvelle 
+        lignée, mais il n'est pas de la famille directe de ses prédécesseurs. Changement 
+        dynastique, peut-être par la force.
+      </p>
+      <p>
+        Cette dynastie de deux siècles sera marquée par l'instabilité politique, des crises 
+        religieuses (conflit entre Horus et Seth ?), et peut-être même une division temporaire 
+        du royaume. Mais elle s'achèvera en beauté avec Khasekhemouy, qui restaure l'unité et 
+        prépare le terrain pour l'Ancien Empire et les pyramides.
+      </p>
+
+      <h2>Contexte Historique</h2>
+      <p>
+        La IIe dynastie fait toujours partie de l'Époque Thinite (comme la Ière), période où 
+        les pharaons sont issus de Thinis en Haute-Égypte. Mais contrairement à la Ière dynastie 
+        relativement bien documentée, la IIe est beaucoup plus mystérieuse : peu de monuments 
+        subsistent, les sources sont fragmentaires, l'ordre des rois est parfois débattu.
+      </p>
+      <p>
+        Ce qui est clair, c'est que l'Égypte traverse une crise majeure au milieu de la dynastie, 
+        avec possiblement une guerre civile entre partisans d'Horus (dieu du Nord et du Sud) et 
+        partisans de Seth (dieu du chaos et du désert). Cette crise religieuse reflète probablement 
+        des tensions politiques profondes.
+      </p>
+
+      <h2>Les Pharaons de la IIe Dynastie</h2>
+
+      <h3><a href="/pharaons/hotepsekhemouy-pharaon.html">1. Hotepsekhemouy</a></h3>
+      <p><strong>Le Pacificateur</strong> • ~2890-2865 av. J.-C. • 25 ans de règne</p>
+      <p>
+        Fondateur de la IIe dynastie après les troubles de succession à la mort de Qâ. Son nom 
+        signifie « Les Deux Puissances sont en paix », suggérant qu'il a réconcilié des factions 
+        rivales. Il restaure l'ordre et assure la continuité de l'État pharaonique.
+      </p>
+      <ul>
+        <li>🏛️ Galeries souterraines à Saqqarah</li>
+        <li>⚖️ Restauration de la stabilité</li>
+        <li>🤝 Réconciliation Nord-Sud</li>
+      </ul>
+
+      <h3><a href="/pharaons/raneb-pharaon.html">2. Raneb</a></h3>
+      <p><strong>Le Solaire</strong> • ~2865-2845 av. J.-C. • 20 ans de règne</p>
+      <p>
+        Fils ou successeur d'Hotepsekhemouy. Innovation religieuse majeure : il est le premier 
+        pharaon à associer son nom à Rê (le dieu solaire), préfigurant le culte solaire qui 
+        dominera l'Ancien Empire. Règne stable et prospère.
+      </p>
+      <ul>
+        <li>☀️ Premier nom associé à Rê</li>
+        <li>🏛️ Galeries à Saqqarah</li>
+        <li>📈 Continuité et prospérité</li>
+      </ul>
+
+      <h3><a href="/pharaons/ninetjer-pharaon.html">3. Ninetjer</a></h3>
+      <p><strong>Le Divin</strong> • ~2845-2800 av. J.-C. • 40-45 ans de règne</p>
+      <p>
+        L'un des règnes les plus longs de la dynastie. Période de stabilité et de développement. 
+        Mais vers la fin de son règne, des tensions apparaissent, annonçant les crises qui suivront. 
+        Derniers pharaon bien documenté avant la période obscure.
+      </p>
+      <ul>
+        <li>👑 Long règne prospère</li>
+        <li>🏛️ Vastes galeries souterraines à Saqqarah</li>
+        <li>⚠️ Tensions en fin de règne</li>
+      </ul>
+
+      <h3>4-6. Oueneg, Sened, Peribsen (?)</h3>
+      <p><strong>La Période Obscure</strong> • ~2800-2720 av. J.-C.</p>
+      <p>
+        Période très mal documentée. L'ordre des pharaons est débattu : Oueneg (ou Ouneg), 
+        Sened, et d'autres noms apparaissent de façon fragmentaire. C'est probablement pendant 
+        cette période qu'éclate la grande crise religieuse et politique de la dynastie.
+      </p>
+
+      <h3><a href="/pharaons/peribsen-pharaon.html">7. Peribsen</a></h3>
+      <p><strong>Le Séthien</strong> • ~2720-2700 av. J.-C. • 20 ans de règne</p>
+      <p>
+        Pharaon révolutionnaire et controversé. Au lieu du faucon Horus traditionnel, il place 
+        l'animal de Seth au-dessus de son serekh. Rupture religieuse radicale qui reflète 
+        probablement une guerre civile ou une division du royaume. Règne mystérieux et fascinant.
+      </p>
+      <ul>
+        <li>⚡ Serekh à l'animal séthien (au lieu d'Horus)</li>
+        <li>⚔️ Possible guerre civile religieuse</li>
+        <li>❓ Pharaon énigmatique et controversé</li>
+      </ul>
+
+      <h3><a href="/pharaons/khasekhem-pharaon.html">8. Khasekhem</a></h3>
+      <p><strong>Le Puissant Apparaît</strong> • ~2700-2690 av. J.-C. • 10 ans de règne</p>
+      <p>
+        Pharaon guerrier qui mène des campagnes brutales pour restaurer l'unité. Ses monuments 
+        montrent des tas de cadavres ennemis et mentionnent des dizaines de milliers de morts. 
+        Vers la fin de son règne, il change de nom pour devenir Khasekhemouy.
+      </p>
+      <ul>
+        <li>⚔️ Campagnes militaires massives</li>
+        <li>🏛️ Monuments en pierre (Hierakonpolis)</li>
+        <li>🔄 Devient Khasekhemouy</li>
+      </ul>
+
+      <h3><a href="/pharaons/khasekhemouy-pharaon.html">9. Khasekhemouy</a></h3>
+      <p><strong>Les Deux Puissances Apparaissent</strong> • ~2690-2686 av. J.-C. • 20-25 ans de règne</p>
+      <p>
+        Le même pharaon que Khasekhem, mais avec un nouveau nom symbolisant la réconciliation 
+        finale. Son serekh porte à la fois Horus ET Seth, réconciliés. Il réunifie définitivement 
+        l'Égypte, construit des forteresses massives, épouse Nimaathap (qui sera mère du fondateur 
+        de la IIIe dynastie). Ferme brillamment la IIe dynastie et prépare l'Ancien Empire.
+      </p>
+      <ul>
+        <li>🤝 Horus et Seth réconciliés sur son serekh</li>
+        <li>🏰 Forteresse d'Hierakonpolis</li>
+        <li>👑 Dernier pharaon de l'Époque Thinite</li>
+        <li>👶 Père (ou grand-père) de Djéser (IIIe dynastie)</li>
+      </ul>
+
+      <h2>La Crise Religieuse : Horus contre Seth</h2>
+      <p>
+        La IIe dynastie est marquée par un conflit religieux et politique majeur entre deux factions :
+      </p>
+      <h3>Faction d'Horus</h3>
+      <p>
+        Les pharaons traditionnels (Hotepsekhemouy, Raneb, Ninetjer) portent le faucon Horus 
+        au-dessus de leur serekh. Horus est le dieu du ciel, protecteur de la monarchie, symbole 
+        de l'ordre et de la légitimité royale. C'est la tradition depuis Narmer.
+      </p>
+      <h3>Faction de Seth</h3>
+      <p>
+        Peribsen rompt avec la tradition et place l'animal de Seth (une créature mystérieuse, 
+        peut-être un âne du désert ou un animal composite) sur son serekh. Seth est le dieu du 
+        chaos, du désert, des tempêtes, de la force brute. C'est un dieu puissant mais dangereux, 
+        traditionnellement opposé à Horus.
+      </p>
+      <h3>Signification</h3>
+      <p>
+        Ce changement n'est pas qu'un symbole religieux : il reflète probablement une guerre 
+        civile entre Haute et Basse-Égypte, ou entre différentes factions de l'élite. Peribsen 
+        représente peut-être le Delta (où Seth avait des cultes importants) contre Thinis 
+        (bastion d'Horus).
+      </p>
+      <h3>Réconciliation</h3>
+      <p>
+        Khasekhemouy met fin au conflit en plaçant BOTH Horus ET Seth sur son serekh. Message : 
+        les deux puissances sont réconciliées, le royaume est réunifié, l'ordre est restauré. 
+        C'est un coup de génie symbolique et politique.
+      </p>
+
+      <h2>Architecture et Innovations</h2>
+      <h3>Galeries Souterraines de Saqqarah</h3>
+      <p>
+        Les premiers pharaons de la IIe dynastie (Hotepsekhemouy, Raneb, Ninetjer) se font 
+        construire d'immenses galeries souterraines à Saqqarah plutôt que des tombes à Abydos. 
+        Ces complexes labyrinthiques en briques crues préfigurent les structures plus complexes 
+        de l'Ancien Empire.
+      </p>
+      <h3>Premières Constructions en Pierre</h3>
+      <p>
+        Khasekhemouy construit les premiers grands monuments en pierre : sa forteresse d'Hierakonpolis 
+        utilise massivement la pierre calcaire. C'est une révolution architecturale qui annonce 
+        directement les pyramides de la IIIe dynastie.
+      </p>
+
+      <h2>Économie et Société</h2>
+      <p>
+        Malgré les troubles politiques, l'économie continue de fonctionner. L'agriculture prospère, 
+        le commerce avec la Nubie et le Levant se maintient, les ateliers royaux produisent. La 
+        solidité des institutions créées par la Ière dynastie permet à l'Égypte de traverser les 
+        crises sans s'effondrer.
+      </p>
+      <p>
+        La société se stratifie encore : l'élite bureaucratique (vizirs, scribes, nomarques) devient 
+        plus puissante et plus riche. Les tombes des hauts fonctionnaires à Saqqarah rivalisent 
+        presque avec celles des pharaons, signe de l'enrichissement de cette classe.
+      </p>
+
+      <h2>Héritage de la IIe Dynastie</h2>
+      <p>
+        La IIe dynastie prouve la résilience de l'État pharaonique. Malgré changement dynastique, 
+        crises religieuses, possibles guerres civiles, l'Égypte ne s'effondre pas. Les institutions 
+        tiennent, l'unification survit, la civilisation continue.
+      </p>
+      <p>
+        Khasekhemouy ferme brillamment cette période troublée et prépare l'âge d'or de l'Ancien 
+        Empire. Son fils (ou petit-fils) Djéser lancera la IIIe dynastie et construira la première 
+        pyramide. Sans la restauration de Khasekhemouy, les pyramides n'auraient peut-être jamais existé.
+      </p>
+      <p>
+        L'Époque Thinite (Ière et IIe dynasties, 3100-2686 av. J.-C.) s'achève. L'Ancien Empire 
+        et l'âge des pyramides peut commencer.
+      </p>
+
+      <h2>Pour aller plus loin</h2>
+      <p>
+        Retour à la page <a href="/dynasties/dynastie-1.html">Ière Dynastie</a> pour voir les 
+        fondateurs, ou explorer les fiches individuelles des pharaons de la IIe dynastie ci-dessus 
+        pour comprendre cette période fascinante et mystérieuse.
+      </p>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <!-- PARTIE 1 : Plan du site (INCHANGÉ) -->
+        <div class="footer-colonne">
+          <h4>Plan du site</h4>
+          <ul class="menu-bas">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="egypte-futur.html">Égypte 2077</a></li>
+            <li>
+              <a href="vie-spirituelle-dieux.html">Vie spirituelle et dieux</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PARTIE 2 : Réseaux SOCIAUX SEULS (TEXTE SUPPRIMÉ) -->
+        <div class="footer-colonne">
+          <div class="footer-reseaux">
+            <a
+              href="https://www.facebook.com/profile.php?id=100071303522123"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-facebook.svg" alt="Facebook" width="30" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCESFVt7gmsKZvzxbT-W_J2Q"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-youtube.svg" alt="YouTube" width="30" />
+            </a>
+            <a
+              href="https://www.instagram.com/philippejireau83/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="../images/icon-instagram.svg" alt="Instagram" width="30" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOUVEAU : COPYRIGHT CENTRÉ EN BAS -->
+      <div class="footer-text">
+        © 2026 Mythes & Spiritualité – Exploration des légendes, des pharaons et
+        du chemin intérieur.
+      </div>
+    </footer>
+    </script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/speech.js"></script>
+    <script src="/js/active-nav.js"></script>
+  </body>
+</html>
